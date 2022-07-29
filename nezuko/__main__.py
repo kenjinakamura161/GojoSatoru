@@ -67,7 +67,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              Nezuko                           |")
+    print("|                              NarberalGamma                           |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -108,7 +108,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo ❤️",
-                url="https://github.com/rozari0/NezukoBot",
+                url="https://github.com/kenjinakamura161/NarberalGamma",
             ),
         ],
         [
@@ -142,7 +142,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/rozari0/NezukoBot",
+                url="https://github.com/kenjinakamura161/NarberalGamma",
             ),
         ],
         [
@@ -159,7 +159,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != enums.ChatType.PRIVATE:
         return await message.reply_photo(
-            photo="https://cdn.awwni.me/2gj9h.jpg",
+            photo="https://telegra.ph/file/9be54e057a7bf90fc14b2.jpg",
             caption="Pm Me For More Details.",
             reply_markup=keyboard,
         )
@@ -184,7 +184,7 @@ async def start(_, message):
             )
     else:
         await message.reply_photo(
-            photo="https://cdn.awwni.me/2gj9h.jpg",
+            photo="https://telegra.ph/file/9be54e057a7bf90fc14b2.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
