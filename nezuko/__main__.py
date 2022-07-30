@@ -67,7 +67,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              NarberalGamma                           |")
+    print("|                              Albedo                           |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -159,7 +159,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != enums.ChatType.PRIVATE:
         return await message.reply_photo(
-            photo="https://telegra.ph/file/9be54e057a7bf90fc14b2.jpg",
+            photo="https://images2.alphacoders.com/655/thumb-1920-655513.jpg",
             caption="Pm Me For More Details.",
             reply_markup=keyboard,
         )
@@ -184,7 +184,7 @@ async def start(_, message):
             )
     else:
         await message.reply_photo(
-            photo="https://telegra.ph/file/9be54e057a7bf90fc14b2.jpg",
+            photo="https://images2.alphacoders.com/655/thumb-1920-655513.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
