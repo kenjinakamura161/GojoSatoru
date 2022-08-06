@@ -67,7 +67,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              Albedo                           |")
+    print("|                              Gojo Satoru                           |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -108,7 +108,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo ❤️",
-                url="https://github.com/kenjinakamura161/NarberalGamma",
+                url="https://github.com/kenjinakamura161/GojoSatoru",
             ),
         ],
         [
@@ -142,7 +142,7 @@ keyboard = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="Repo 🛠",
-                url="https://github.com/kenjinakamura161/NarberalGamma",
+                url="https://github.com/kenjinakamura161/GojoSatoru",
             ),
         ],
         [
@@ -159,7 +159,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != enums.ChatType.PRIVATE:
         return await message.reply_photo(
-            photo="https://images2.alphacoders.com/655/thumb-1920-655513.jpg",
+            photo="https://images6.alphacoders.com/116/thumb-1920-1167537.jpg",
             caption="Pm Me For More Details.",
             reply_markup=keyboard,
         )
@@ -184,7 +184,7 @@ async def start(_, message):
             )
     else:
         await message.reply_photo(
-            photo="https://images2.alphacoders.com/655/thumb-1920-655513.jpg",
+            photo="https://images3.alphacoders.com/111/thumb-1920-1116286.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
